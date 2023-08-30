@@ -73,5 +73,5 @@ credentials:
     search: '(.*)'
     type: 'post'
 login:
-  domain: 'signin.aws.amazon.com'
-  path:  'signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-east-2_0f30093c86c6412a&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=7gg2lneHCYOAYpdSKS0fGCF1Mt2k0qAbfou8wXKIXco&code_challenge_method=SHA-256'
+  domain: 'console.aws.amazon.com'
+  path:  '/console/home?nc2=h_ct&src=header-signin'
